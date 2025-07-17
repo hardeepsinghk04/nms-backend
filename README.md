@@ -88,22 +88,21 @@ String encrypted = AesEncryptionUtil.encrypt(plainPassword);
 📛 Endpoint protection using annotations like @PreAuthorize
 
 📁 Project Structure
-graphql
-Copy
-Edit
-nms-backend
-├── config                # Security configurations (JWT, filters, etc.)
+nms-backend/
+├── config/                     # Security configurations (JWT, filters, etc.)
 │   └── SecurityConfig.java
-├── controller            # API endpoints
-├── dto                  # Data transfer objects
-├── model                # Entity classes
-├── repository           # Spring Data JPA repositories
-├── service              # Business logic
-├── util                 # Utility classes (JWT, AES, etc.)
+├── controller/                 # API endpoint controllers
+├── dto/                        # Data Transfer Objects
+├── model/                      # JPA entity classes
+├── repository/                 # Spring Data JPA repositories
+├── service/                    # Business logic layer
+├── util/                       # Utility classes
 │   ├── AesEncryptionUtil.java
 │   ├── JwtUtil.java
 │   └── PasswordEncoderUtil.java
-└── NmsBackendApplication.java
+└── NmsBackendApplication.java  # Main application file
+
+
 🧪 Sample Data (Optional)
 You can either:
 
